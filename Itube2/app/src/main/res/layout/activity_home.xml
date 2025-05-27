@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- YouTube URL input field with custom style and margin -->
+    <EditText
+        android:id="@+id/youtube_url"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="YouTube URL"
+        android:inputType="textUri"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:layout_marginBottom="15dp" /> <!-- Adds gap below the field -->
+
+    <!-- Play button with custom style and margin -->
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/youtube_url"
+        android:text="Play"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/CustomTextStyle"
+        android:layout_marginTop="15dp" /> <!-- Adds gap above the button -->
+
+    <!-- Add to Playlist button with custom style and margin -->
+    <Button
+        android:id="@+id/add_to_playlist_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_button"
+        android:text="Add to Playlist"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/CustomTextStyle"
+        android:layout_marginTop="10dp" /> <!-- Adds gap above the button -->
+
+    <!-- View Playlist button with custom style and margin -->
+    <Button
+        android:id="@+id/view_playlist_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_to_playlist_button"
+        android:text="View Playlist"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/CustomTextStyle"
+        android:layout_marginTop="10dp" /> <!-- Adds gap above the button -->
+
+    <!-- WebView for YouTube video embedding -->
+    <WebView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/view_playlist_button"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

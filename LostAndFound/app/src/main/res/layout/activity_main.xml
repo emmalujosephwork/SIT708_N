@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Create New Advert Button -->
+    <Button
+        android:id="@+id/createAdvertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a New Advert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="100dp"
+        android:padding="20dp"
+        android:textSize="16sp"/>
+
+    <!-- Show All Lost & Found Items Button -->
+    <Button
+        android:id="@+id/showItemsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show All Lost &amp; Found Items"
+        app:layout_constraintTop_toBottomOf="@id/createAdvertButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:textSize="16sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

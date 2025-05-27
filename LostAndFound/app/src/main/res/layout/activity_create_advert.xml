@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAdvertActivity"
+    android:padding="16dp"> <!-- Added padding to the ConstraintLayout for space on all sides -->
+
+    <!-- Radio Buttons for Post Type -->
+    <TextView
+        android:id="@+id/postTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post type:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" /> <!-- Added margin top -->
+
+    <RadioGroup
+        android:id="@+id/postTypeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/postTypeLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/lostRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lost" />
+
+        <RadioButton
+            android:id="@+id/foundRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Found" />
+    </RadioGroup>
+
+    <!-- Name Field -->
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/postTypeGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" /> <!-- Added margin top -->
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter name"
+        app:layout_constraintTop_toBottomOf="@id/nameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"/>
+
+    <!-- Phone Field -->
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/nameField"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" /> <!-- Added margin top -->
+
+    <EditText
+        android:id="@+id/phoneField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter phone number"
+        app:layout_constraintTop_toBottomOf="@id/phoneLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"/>
+
+    <!-- Description Field -->
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/phoneField"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" /> <!-- Added margin top -->
+
+    <EditText
+        android:id="@+id/descriptionField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter description"
+        app:layout_constraintTop_toBottomOf="@id/descriptionLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"/>
+
+    <!-- Date Field -->
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/descriptionField"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" /> <!-- Added margin top -->
+
+    <EditText
+        android:id="@+id/dateField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter date"
+        app:layout_constraintTop_toBottomOf="@id/dateLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"/>
+
+    <!-- Location Field -->
+    <TextView
+        android:id="@+id/locationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/dateField"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" /> <!-- Added margin top -->
+
+    <EditText
+        android:id="@+id/locationField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter location"
+        app:layout_constraintTop_toBottomOf="@id/locationLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@id/locationField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:padding="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

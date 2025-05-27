@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Itube2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- Example: <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Define Custom Text Style -->
+    <style name="CustomTextStyle">
+        <item name="android:textColor">#6A4CFF</item> <!-- Purple color -->
+        <item name="android:textSize">18sp</item> <!-- Text size -->
+        <item name="android:textStyle">bold</item> <!-- Bold text -->
+    </style>
+
+    <style name="Theme.Itube2" parent="Base.Theme.Itube2">
+        <!-- You can apply this custom style to your app theme or other components -->
+    </style>
+</resources>

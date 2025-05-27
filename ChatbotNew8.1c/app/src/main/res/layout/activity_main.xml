@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome,\nLets Chat!"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Username"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#90ee90"
+        android:textColor="#000"
+        android:padding="12dp" />
+</LinearLayout>
