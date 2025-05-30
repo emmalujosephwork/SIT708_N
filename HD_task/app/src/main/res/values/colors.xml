@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic colors -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- Accent purple for button and outlines -->
+    <color name="purple_500">#8E44AD</color>
+    <color name="purple_700">#6C3483</color>
+
+    <!-- Gradient background stops -->
+    <color name="gradient_start">#00E5FF</color>  <!-- cyan accent -->
+    <color name="gradient_end">#0099CC</color>    <!-- deep teal -->
+
+    <!-- Optional additional material colors -->
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="purple_200">#CE93D8</color>
+    <color name="purple_800">#5E35B1</color>
+</resources>

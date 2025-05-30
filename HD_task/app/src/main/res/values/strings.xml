@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Trip Planner</string>
+    <string name="create_account">Create Your Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_or_phone">Phone or Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_account">Already have an account? Sign in</string>
+
+    <string name="hello_sign_in">Hello, Sign in!</string>
+    <string name="enter_email">Enter Your Email</string>
+    <string name="sign_in">Sign in</string>
+    <string name="dont_have_account_sign_up">Don not have an account? Sign up</string>
+    <string name="type_message">Type a message</string>
+    <string name="send">Send</string>
+
+
+</resources>
